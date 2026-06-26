@@ -4,7 +4,7 @@
 # name: discourse-turnstile
 # about: Cloudflare Turnstile captcha on the Discourse signup form (fork of discourse-hcaptcha)
 # version: 0.1.0
-# authors: Civilized Discourse Construction Kit, Inc. (original hCaptcha plugin); Turnstile fork
+# authors: tuntun1337
 # url: https://github.com/tuntun1337/discourse-turnstile
 # required_version: 2.7.0
 
