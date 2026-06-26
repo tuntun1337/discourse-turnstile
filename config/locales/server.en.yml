@@ -1,0 +1,16 @@
+en:
+  dashboard:
+    problem:
+      turnstile_configuration: "There is a problem with your Turnstile `site_key` or `secret_key` configuration"
+
+  admin:
+    site_settings:
+      categories:
+        discourse_turnstile: "Turnstile Plugin"
+
+  site_settings:
+    discourse_turnstile_enabled: "Enable Cloudflare Turnstile on the signup form. Requires a <a target='blank' href='https://dash.cloudflare.com/?to=/:account/turnstile'>Cloudflare Turnstile</a> widget (site key + secret key)."
+    turnstile_site_key: "Cloudflare Turnstile Site Key (public) from your Turnstile widget"
+    turnstile_secret_key: "Cloudflare Turnstile Secret Key (private) from your Turnstile widget"
+
+  turnstile_verification_failed: "Turnstile verification failed"

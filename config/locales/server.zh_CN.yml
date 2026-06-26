@@ -1,0 +1,13 @@
+zh_CN:
+  dashboard:
+    problem:
+      turnstile_configuration: "您的 Turnstile `site_key` 或 `secret_key` 配置存在问题"
+  admin:
+    site_settings:
+      categories:
+        discourse_turnstile: "Turnstile 插件"
+  site_settings:
+    discourse_turnstile_enabled: "在注册表单上启用 Cloudflare Turnstile 验证码。需要在 <a target='blank' href='https://dash.cloudflare.com/?to=/:account/turnstile'>Cloudflare Turnstile</a> 中创建一个小组件（Site Key + Secret Key）。"
+    turnstile_site_key: "来自 Cloudflare Turnstile 小组件的 Site Key（公开）"
+    turnstile_secret_key: "来自 Cloudflare Turnstile 小组件的 Secret Key（私密）"
+  turnstile_verification_failed: "Turnstile 验证失败"
