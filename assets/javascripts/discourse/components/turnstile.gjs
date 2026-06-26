@@ -46,16 +46,12 @@ export default class Turnstile extends Component {
   }
 
   async loadTurnstileScript(siteKey) {
+    // loadScript injects api.js with async and resolves on its load event, so
+    // window.turnstile is ready here. Do NOT use turnstile.ready() — it throws
+    // when api.js was loaded with async/defer; just render directly.
     await loadScript(TURNSTILE_SCRIPT_URL);
     this.turnstile = window.turnstile;
-
-    // Turnstile recommends gating explicit render() behind ready() so the
-    // API is fully initialized; fall back to a direct render if unavailable.
-    if (this.turnstile?.ready) {
-      this.turnstile.ready(() => this.renderTurnstile(siteKey));
-    } else {
-      this.renderTurnstile(siteKey);
-    }
+    this.renderTurnstile(siteKey);
   }
 
   renderTurnstile(siteKey) {
